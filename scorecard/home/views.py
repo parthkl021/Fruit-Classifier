@@ -60,7 +60,7 @@ default_values_f2 = {
 # Function to load models when needed
 def load_models():
     model_f1_1 = pickle.load(open(os.path.join(settings.BASE_DIR, 'Nominal_models/linear_regression_model_new.pkl'), 'rb'))
-    model_f1_2 = pickle.load(open(os.path.join(settings.BASE_DIR, 'Nominal_models/decision_tree_regressor_model_new.pkl'), 'rb'))
+    model_f1_2 = pickle.load(open(os.path.join(settings.BASE_DIR, 'Nominal_models/decision_tree_regressor_model_low.pkl'), 'rb'))
     model_f1_3 = pickle.load(open(os.path.join(settings.BASE_DIR, 'Nominal_models/random_forest_regressor_model_new.pkl'), 'rb'))
 
     model_f2_1 = pickle.load(open(os.path.join(settings.BASE_DIR, 'Intrest_model/decision_tree_model.pkl'), 'rb'))
